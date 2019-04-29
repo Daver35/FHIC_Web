@@ -1,5 +1,5 @@
 $(function () {
-
+    
     function initMap() {
 
         var location = new google.maps.LatLng(41.386952, 2.1699290);
