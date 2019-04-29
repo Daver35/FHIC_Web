@@ -1,8 +1,24 @@
+@font-face {
+    font-family: offside;
+    src: url('Offside-font/Offside-Regular.ttf');
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
 h1{
+    font-family: 'Offside';
     text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 40px;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #469030;
+}
+
+.navbar-brand{
+    padding-top: 11px;
 }
 
 #map {
