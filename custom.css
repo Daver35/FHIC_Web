@@ -13,6 +13,46 @@ h1{
 }
 
 
+.temas {
+	  width: 75%; 
+    height: 10px; 
+    margin-top: 10px; 
+	  margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.temas div {
+	  float: left;
+}
+
+
+.button_tema {
+	  cursor: pointer;
+}
+
+.button_hide {
+	  cursor: pointer;
+	  display: none;
+}
+
+
+#medi_ambient {
+	  background-color: #4CAF50;
+} /* Green */
+	
+#serveis {
+	  background-color: #008CBA;
+} /* Blue */ 
+	
+#socials {
+	  background-color: #f44336;
+} /* Red */ 
+	
+#infraestructures {
+	  background-color: #FFA500;
+} /* Orange */ 
+
 .navbar-default .navbar-nav > li > a:hover {
     color: #469030;
 }
@@ -21,11 +61,12 @@ h1{
     padding-top: 11px;
 }
 
+
 #map {
     width: 75%; 
     height: 400px; 
     margin-top: 10px; 
-    margin-left: auto;
+	  margin-left: auto;
     margin-right: auto;
     display: block;
 }
@@ -33,20 +74,18 @@ h1{
 #search {
     margin-top: 40px; 
     margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
 }
 
 .info-window {
     font-family: 'Montserrat', sans-serif;
 }
+
 .info-content {
     color: #999;
 }
 
 form {
-    width: 25%;
+    width: 75%;
     margin: auto;
 }
 .search {

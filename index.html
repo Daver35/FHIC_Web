@@ -55,7 +55,118 @@
             </div> <!-- /.row-->
 
         </div> <!-- /.container-->
+	
+	<div class="temas">
+		<div>
+		<button onclick="myFunction1()" class="button_tema" id="medi_ambient">Medi ambient</button>
+		<button onclick="myFunction1()" class="button_hide" id="medi_ambient2">Medi ambient</button>
+		</div>
+		<div>
+		<button onclick="myFunction2()" class="button_tema" id="serveis">Serveis</button>
+		<button onclick="myFunction2()" class="button_hide" id="serveis2">Serveis</button>
+		</div>
+		<div>
+		<button onclick="myFunction3()" class="button_tema" id="socials">Socials</button>
+		<button onclick="myFunction3()" class="button_hide" id="socials2">Socials</button>
+		</div>
+		<div>
+		<button onclick="myFunction4()" class="button_tema" id="infraestructures">Infraestructures</button>
+		<button onclick="myFunction4()" class="button_hide" id="infraestructures2">Infraestructures</button>
+		</div>
+	
+	</div> 
+	
+	<script> 
+	var inicio = 0;
+	
+	function esconder() {
+		document.getElementById("medi_ambient").style.display = "none";
+		document.getElementById("serveis").style.display = "none";
+		document.getElementById("socials").style.display = "none";
+		document.getElementById("infraestructures").style.display = "none";
+		
+		document.getElementById("medi_ambient2").style.display = "block";
+		document.getElementById("serveis2").style.display = "block";
+		document.getElementById("socials2").style.display = "block";
+		document.getElementById("infraestructures2").style.display = "block";
+		inicio = 1;
+	}
+	
+	function myFunction1() {
+		var y = document.getElementById("medi_ambient2");
+		var x = document.getElementById("medi_ambient");
+		if(inicio == 0) {
+			esconder();
+		}
+		if (x.style.display === "none") {
+			x.style.display = "block";
+			y.style.display = "none";
+		} else {
+			x.style.display = "none";
+			y.style.display = "block";
 
+		}
+	}
+
+	function myFunction2() {
+		var y = document.getElementById("serveis2");
+		var x = document.getElementById("serveis");
+		if(inicio == 0) {
+			esconder();
+		}
+		if (x.style.display === "none") {
+			x.style.display = "block";
+			y.style.display = "none";
+
+		} else {
+			x.style.display = "none";
+			y.style.display = "block";
+
+		}
+	}
+
+	function myFunction3() {
+		var y = document.getElementById("socials2");
+		var x = document.getElementById("socials");
+		if(inicio == 0) {
+			esconder();
+		}
+		if (x.style.display === "none") {
+			x.style.display = "block";
+			y.style.display = "none";
+		} else {
+			x.style.display = "none";
+			y.style.display = "block";
+
+		}
+	}
+
+	function myFunction4() {
+		var x = document.getElementById("infraestructures");
+		var y = document.getElementById("infraestructures2");
+		if(inicio == 0) {
+			esconder();
+		}
+		if (x.style.display === "none") {
+			y.style.display = "none";
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+			y.style.display = "block";
+		}
+	}	
+	</script>
+	
+	
+	<!--/
+	<div id="temas_seleccionados">
+		<button id="medi_ambient2">Medi ambient</button>
+		<button id="serveis2">Serveis</button>
+		<button id="socials2">Socials</button>
+		<button id="infraestructures2">Infraestructures</button>
+	  </div> 
+	  -->
+	
         <div id="search">
           <form>
             <input type="text" placeholder="Localitat" required>
@@ -63,6 +174,7 @@
           </form>
 
           <div id="map"></div>
+	  
         </div>
         
 
