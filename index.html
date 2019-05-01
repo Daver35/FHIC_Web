@@ -36,17 +36,17 @@
          
       </nav>
  
-        <div class="container" style="margin-top: 50px">
+        <div class="container bgimg" style="margin-top: 50px; margin-bottom: 30px;">
 
-            <div class="row">
+            <div class="row" style="margin-bottom: 50px;">
 
                 <div>
 
-                    <h1 align="center">Local change</h1>
+                    <h1 align="center" style="margin-top: 45px">Local change</h1>
 
-                    <h3 align="center">Plataforma de peticions d'activisme social local</h3><br>
+                    <h3 align="center" style="margin-bottom: 20px;">Plataforma de peticions d'activisme social local</h3><br>
 
-                    <h4 align="center">Inicia una petició o dóna suport a una existent per tal d'aconseguir un canvi positiu en el teu barri o poble.</h4>
+                    <h4 align="center" style="margin-bottom: 40px;">Inicia una petició o dóna suport a una existent per tal d'aconseguir un canvi positiu en el teu barri o poble.</h4>
 
                     <div class="container" style="height: 50px">
                     	<button class="button_fancy square green" style="width: 160px; height: 45px;"><strong>Inicia una petició</strong></button>
@@ -57,117 +57,9 @@
             </div> <!-- /.row-->
 
         </div> <!-- /.container-->
-	
-	<div class="temas">
-		<div>
-		<button onclick="myFunction1()" class="button_tema" id="medi_ambient">Medi ambient</button>
-		<button onclick="myFunction1()" class="button_hide" id="medi_ambient2">Medi ambient</button>
-		</div>
-		<div>
-		<button onclick="myFunction2()" class="button_tema" id="serveis">Serveis</button>
-		<button onclick="myFunction2()" class="button_hide" id="serveis2">Serveis</button>
-		</div>
-		<div>
-		<button onclick="myFunction3()" class="button_tema" id="socials">Socials</button>
-		<button onclick="myFunction3()" class="button_hide" id="socials2">Socials</button>
-		</div>
-		<div>
-		<button onclick="myFunction4()" class="button_tema" id="infraestructures">Infraestructures</button>
-		<button onclick="myFunction4()" class="button_hide" id="infraestructures2">Infraestructures</button>
-		</div>
-	
-	</div> 
-	
-	<script> 
-	var inicio = 0;
-	
-	function esconder() {
-		document.getElementById("medi_ambient").style.display = "none";
-		document.getElementById("serveis").style.display = "none";
-		document.getElementById("socials").style.display = "none";
-		document.getElementById("infraestructures").style.display = "none";
-		
-		document.getElementById("medi_ambient2").style.display = "block";
-		document.getElementById("serveis2").style.display = "block";
-		document.getElementById("socials2").style.display = "block";
-		document.getElementById("infraestructures2").style.display = "block";
-		inicio = 1;
-	}
-	
-	function myFunction1() {
-		var y = document.getElementById("medi_ambient2");
-		var x = document.getElementById("medi_ambient");
-		if(inicio == 0) {
-			esconder();
-		}
-		if (x.style.display === "none") {
-			x.style.display = "block";
-			y.style.display = "none";
-		} else {
-			x.style.display = "none";
-			y.style.display = "block";
 
-		}
-	}
 
-	function myFunction2() {
-		var y = document.getElementById("serveis2");
-		var x = document.getElementById("serveis");
-		if(inicio == 0) {
-			esconder();
-		}
-		if (x.style.display === "none") {
-			x.style.display = "block";
-			y.style.display = "none";
-
-		} else {
-			x.style.display = "none";
-			y.style.display = "block";
-
-		}
-	}
-
-	function myFunction3() {
-		var y = document.getElementById("socials2");
-		var x = document.getElementById("socials");
-		if(inicio == 0) {
-			esconder();
-		}
-		if (x.style.display === "none") {
-			x.style.display = "block";
-			y.style.display = "none";
-		} else {
-			x.style.display = "none";
-			y.style.display = "block";
-
-		}
-	}
-
-	function myFunction4() {
-		var x = document.getElementById("infraestructures");
-		var y = document.getElementById("infraestructures2");
-		if(inicio == 0) {
-			esconder();
-		}
-		if (x.style.display === "none") {
-			y.style.display = "none";
-			x.style.display = "block";
-		} else {
-			x.style.display = "none";
-			y.style.display = "block";
-		}
-	}	
-	</script>
-	
-	
-	<!--/
-	<div id="temas_seleccionados">
-		<button id="medi_ambient2">Medi ambient</button>
-		<button id="serveis2">Serveis</button>
-		<button id="socials2">Socials</button>
-		<button id="infraestructures2">Infraestructures</button>
-	  </div> 
-	  -->
+        <h3 style="width: 75%; margin-left: auto; margin-right: auto; margin-bottom: 20px;">Busca peticions properes a la teva localitat</h3>
 	
         <div id="search">
           <form>
@@ -178,7 +70,120 @@
           <div id="map"></div>
 	  
         </div>
-        
+
+        <div class="temas">
+
+			<h4>Temes</h4>
+
+			<div>
+			<button onclick="myFunction1()" class="button_tema" id="medi_ambient">Medi ambient</button>
+			<button onclick="myFunction1()" class="button_hide" id="medi_ambient2">Medi ambient</button>
+			</div>
+			<div>
+			<button onclick="myFunction2()" class="button_tema" id="serveis">Serveis</button>
+			<button onclick="myFunction2()" class="button_hide" id="serveis2">Serveis</button>
+			</div>
+			<div>
+			<button onclick="myFunction3()" class="button_tema" id="socials">Socials</button>
+			<button onclick="myFunction3()" class="button_hide" id="socials2">Socials</button>
+			</div>
+			<div>
+			<button onclick="myFunction4()" class="button_tema" id="infraestructures">Infraestructures</button>
+			<button onclick="myFunction4()" class="button_hide" id="infraestructures2">Infraestructures</button>
+			</div>
+		
+		</div> 
+		
+		<script> 
+		var inicio = 0;
+		
+		function esconder() {
+			document.getElementById("medi_ambient").style.display = "none";
+			document.getElementById("serveis").style.display = "none";
+			document.getElementById("socials").style.display = "none";
+			document.getElementById("infraestructures").style.display = "none";
+			
+			document.getElementById("medi_ambient2").style.display = "block";
+			document.getElementById("serveis2").style.display = "block";
+			document.getElementById("socials2").style.display = "block";
+			document.getElementById("infraestructures2").style.display = "block";
+			inicio = 1;
+		}
+		
+		function myFunction1() {
+			var y = document.getElementById("medi_ambient2");
+			var x = document.getElementById("medi_ambient");
+			if(inicio == 0) {
+				esconder();
+			}
+			if (x.style.display === "none") {
+				x.style.display = "block";
+				y.style.display = "none";
+			} else {
+				x.style.display = "none";
+				y.style.display = "block";
+
+			}
+		}
+
+		function myFunction2() {
+			var y = document.getElementById("serveis2");
+			var x = document.getElementById("serveis");
+			if(inicio == 0) {
+				esconder();
+			}
+			if (x.style.display === "none") {
+				x.style.display = "block";
+				y.style.display = "none";
+
+			} else {
+				x.style.display = "none";
+				y.style.display = "block";
+
+			}
+		}
+
+		function myFunction3() {
+			var y = document.getElementById("socials2");
+			var x = document.getElementById("socials");
+			if(inicio == 0) {
+				esconder();
+			}
+			if (x.style.display === "none") {
+				x.style.display = "block";
+				y.style.display = "none";
+			} else {
+				x.style.display = "none";
+				y.style.display = "block";
+
+			}
+		}
+
+		function myFunction4() {
+			var x = document.getElementById("infraestructures");
+			var y = document.getElementById("infraestructures2");
+			if(inicio == 0) {
+				esconder();
+			}
+			if (x.style.display === "none") {
+				y.style.display = "none";
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+				y.style.display = "block";
+			}
+		}	
+		</script>
+	
+	
+	<!--/
+	<div id="temas_seleccionados">
+		<button id="medi_ambient2">Medi ambient</button>
+		<button id="serveis2">Serveis</button>
+		<button id="socials2">Socials</button>
+		<button id="infraestructures2">Infraestructures</button>
+	  </div> 
+	  -->
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

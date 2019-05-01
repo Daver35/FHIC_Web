@@ -37,22 +37,25 @@ h1 {
     margin-bottom: 40px;
 }
 
-h4 {
+h3, h4 {
 	font-family: 'Montserrat', sans-serif;
 	line-height: 30px;
-    margin-bottom: 40px;
 }
 
 .container {
 	display: flex;
   	align-items: center;
   	justify-content: center;
-    margin-bottom: 40px;
+    width: 100%;
 }
 
 .row div {
   	margin: 0 auto;
   	width: 60%;
+}
+
+.bgimg {
+    background-image: url('background.png');
 }
 
 /* ---------------------------------------------- */
@@ -119,42 +122,42 @@ h4 {
 
 .temas {
 	width: 75%; 
-    height: 10px; 
-    margin-top: 10px; 
+    height: 30px; 
+    margin-bottom: 60px;
 	margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
 .temas div {
-	  float: left;
+	float: left;
 }
 
 
 .button_tema {
-	  cursor: pointer;
+	cursor: pointer;
 }
 
 .button_hide {
-	  cursor: pointer;
-	  display: none;
+    cursor: pointer;
+    display: none;
 }
 
 
 #medi_ambient {
-	  background-color: #4CAF50; /* Green */
+	background-color: #4CAF50; /* Green */
 }
 	
 #serveis {
-	  background-color: #008CBA; /* Blue */ 
+	background-color: #008CBA; /* Blue */ 
 }
 	
 #socials {
-	  background-color: #f44336; /* Red */ 
+	background-color: #f44336; /* Red */ 
 }
 	
 #infraestructures {
-	  background-color: #FFA500; /* Orange */ 
+	background-color: #FFA500; /* Orange */ 
 }
 
 /* ---------------------------------------------- */
@@ -165,26 +168,27 @@ h4 {
 form {
     width: 75%;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .search {
-                padding:8px 15px;
-                background:rgba(50, 50, 50, 0.2);
-                border:0px solid #dbdbdb;
+    padding:8px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
 }
 
 .button {
-                position:relative;
-                padding:6px 15px;
-                left:-8px;
-                border:2px solid #207cca;
-                background-color:#207cca;
-                color:#fafafa;
+    position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #207cca;
+    background-color:#207cca;
+    color:#fafafa;
 }
 
 .button:hover  {
-                background-color:#fafafa;
-                color:#207cca;
+    background-color:#fafafa;
+    color:#207cca;
 }
 
 /* ---------------------------------------------- */
@@ -199,11 +203,6 @@ form {
 	margin-left: auto;
     margin-right: auto;
     display: block;
-}
-
-#search {
-    margin-top: 40px; 
-    margin-bottom: 40px;
 }
 
 .info-window {
