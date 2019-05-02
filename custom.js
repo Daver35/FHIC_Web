@@ -256,8 +256,8 @@ var inicio = 0;
 			} else {
 				x.style.display = "none";
 				y.style.display = "block";
-				yellow_marker.setVisible(false);
-				yellow_infowindow.close(map, yellow_marker);
+				red_marker.setVisible(false);
+				red_infowindow.close(map, red_marker);
 			}
 		}
 
