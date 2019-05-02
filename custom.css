@@ -117,7 +117,6 @@ h3, h4 {
 
 /* ---------------------------------------------- */
 
-
 /* Botons temes */
 
 .temas {
@@ -131,6 +130,7 @@ h3, h4 {
 
 .temas div {
 	float: left;
+	padding-right: 20px;
 }
 
 
@@ -153,7 +153,7 @@ h3, h4 {
 }
 	
 #socials {
-	background-color: #f44336; /* Red */ 
+	background-color: #7d3c98 ; /*Purple*/ 
 }
 	
 #infraestructures {
