@@ -1,0 +1,44 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 40px;
+}
+input { margin-bottom: 10px; }
+
+.button{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin-top: 10px;
+  	cursor: pointer;
+}
+
+.main-column {
+  width: 75%;
+  float: left;
+}
+.side-column {
+  width: 25%;
+  float: right;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  
+  .main-column {
+    width: 100%;
+    padding-bottom: 10px;
+    float: none;
+  }
+
+  .side-column {
+  	width: 100%;
+    padding-bottom: 10px;
+    float: none;
+  }
+}
