@@ -174,114 +174,141 @@ $(function () {
 
 var inicio = 0;
 		
-		function esconder() {
-			document.getElementById("medi_ambient").style.display = "none";
-			document.getElementById("serveis").style.display = "none";
-			document.getElementById("socials").style.display = "none";
-			document.getElementById("infraestructures").style.display = "none";
-			
-			document.getElementById("medi_ambient2").style.display = "block";
-			document.getElementById("serveis2").style.display = "block";
-			document.getElementById("socials2").style.display = "block";
-			document.getElementById("infraestructures2").style.display = "block";
-			inicio = 1;
-		}
+function esconder() {
+	document.getElementById("medi_ambient").style.display = "none";
+	document.getElementById("serveis").style.display = "none";
+	document.getElementById("socials").style.display = "none";
+	document.getElementById("infraestructures").style.display = "none";
+	
+	document.getElementById("medi_ambient2").style.display = "block";
+	document.getElementById("serveis2").style.display = "block";
+	document.getElementById("socials2").style.display = "block";
+	document.getElementById("infraestructures2").style.display = "block";
+	inicio = 1;
+}
+
+function myFunction1() {
+	var y = document.getElementById("medi_ambient2");
+	var x = document.getElementById("medi_ambient");
+	if(inicio == 0) {
+		esconder();
+		red_marker.setVisible(false);
+		red_infowindow.close(map, red_marker);
+		blue_marker.setVisible(false);
+		blue_infowindow.close(map, blue_marker);
+		yellow_marker.setVisible(false);
+		yellow_infowindow.close(map, yellow_marker);
 		
-		function myFunction1() {
-			var y = document.getElementById("medi_ambient2");
-			var x = document.getElementById("medi_ambient");
-			if(inicio == 0) {
-				esconder();
-				red_marker.setVisible(false);
-				red_infowindow.close(map, red_marker);
-				blue_marker.setVisible(false);
-				blue_infowindow.close(map, blue_marker);
-				yellow_marker.setVisible(false);
-				yellow_infowindow.close(map, yellow_marker);
-				
-			}
-			if (x.style.display === "none") {
-				x.style.display = "block";
-				y.style.display = "none";
-				green_marker.setVisible(true);
-			} else {
-				x.style.display = "none";
-				y.style.display = "block";
-				green_marker.setVisible(false);
-				green_infowindow.close(map, green_marker);
-			}
-		}
+	}
+	if (x.style.display === "none") {
+		x.style.display = "block";
+		y.style.display = "none";
+		green_marker.setVisible(true);
+	} else {
+		x.style.display = "none";
+		y.style.display = "block";
+		green_marker.setVisible(false);
+		green_infowindow.close(map, green_marker);
+	}
+}
 
-		function myFunction2() {
-			var y = document.getElementById("serveis2");
-			var x = document.getElementById("serveis");
-			if(inicio == 0) {
-				esconder();
-				red_marker.setVisible(false);
-				red_infowindow.close(map, red_marker);
-				green_marker.setVisible(false);
-				green_infowindow.close(map, green_marker);
-				yellow_marker.setVisible(false);
-				yellow_infowindow.close(map, yellow_marker);
-			}
-			if (x.style.display === "none") {
-				x.style.display = "block";
-				y.style.display = "none";
-				blue_marker.setVisible(true);
+function myFunction2() {
+	var y = document.getElementById("serveis2");
+	var x = document.getElementById("serveis");
+	if(inicio == 0) {
+		esconder();
+		red_marker.setVisible(false);
+		red_infowindow.close(map, red_marker);
+		green_marker.setVisible(false);
+		green_infowindow.close(map, green_marker);
+		yellow_marker.setVisible(false);
+		yellow_infowindow.close(map, yellow_marker);
+	}
+	if (x.style.display === "none") {
+		x.style.display = "block";
+		y.style.display = "none";
+		blue_marker.setVisible(true);
 
-			} else {
-				x.style.display = "none";
-				y.style.display = "block";
-				blue_marker.setVisible(false);
-				blue_infowindow.close(map, blue_marker);
-			}
-		}
+	} else {
+		x.style.display = "none";
+		y.style.display = "block";
+		blue_marker.setVisible(false);
+		blue_infowindow.close(map, blue_marker);
+	}
+}
 
-		function myFunction3() {
-			var y = document.getElementById("socials2");
-			var x = document.getElementById("socials");
-			if(inicio == 0) {
-				esconder();
-				green_marker.setVisible(false);
-				green_infowindow.close(map, green_marker);
-				blue_marker.setVisible(false);
-				blue_infowindow.close(map, blue_marker);
-				yellow_marker.setVisible(false);
-				yellow_infowindow.close(map, yellow_marker);
-			}
-			if (x.style.display === "none") {
-				x.style.display = "block";
-				y.style.display = "none";
-				red_marker.setVisible(true);
-			} else {
-				x.style.display = "none";
-				y.style.display = "block";
-				red_marker.setVisible(false);
-				red_infowindow.close(map, red_marker);
-			}
-		}
+function myFunction3() {
+	var y = document.getElementById("socials2");
+	var x = document.getElementById("socials");
+	if(inicio == 0) {
+		esconder();
+		green_marker.setVisible(false);
+		green_infowindow.close(map, green_marker);
+		blue_marker.setVisible(false);
+		blue_infowindow.close(map, blue_marker);
+		yellow_marker.setVisible(false);
+		yellow_infowindow.close(map, yellow_marker);
+	}
+	if (x.style.display === "none") {
+		x.style.display = "block";
+		y.style.display = "none";
+		red_marker.setVisible(true);
+	} else {
+		x.style.display = "none";
+		y.style.display = "block";
+		red_marker.setVisible(false);
+		red_infowindow.close(map, red_marker);
+	}
+}
 
-		function myFunction4() {
-			var x = document.getElementById("infraestructures");
-			var y = document.getElementById("infraestructures2");
-			if(inicio == 0) {
-				esconder();
-				red_marker.setVisible(false);
-				red_infowindow.close(map, red_marker);
-				blue_marker.setVisible(false);
-				blue_infowindow.close(map, blue_marker);
-				green_marker.setVisible(false);
-				green_infowindow.close(map, green_marker);
-			}
-			if (x.style.display === "none") {
-				y.style.display = "none";
-				x.style.display = "block";
-				yellow_marker.setVisible(true);
-				
-			} else {
-				x.style.display = "none";
-				y.style.display = "block";
-				yellow_marker.setVisible(false);
-				yellow_infowindow.close(map, yellow_marker);
-			}
-		}
+function myFunction4() {
+	var x = document.getElementById("infraestructures");
+	var y = document.getElementById("infraestructures2");
+	if(inicio == 0) {
+		esconder();
+		red_marker.setVisible(false);
+		red_infowindow.close(map, red_marker);
+		blue_marker.setVisible(false);
+		blue_infowindow.close(map, blue_marker);
+		green_marker.setVisible(false);
+		green_infowindow.close(map, green_marker);
+	}
+	if (x.style.display === "none") {
+		y.style.display = "none";
+		x.style.display = "block";
+		yellow_marker.setVisible(true);
+		
+	} else {
+		x.style.display = "none";
+		y.style.display = "block";
+		yellow_marker.setVisible(false);
+		yellow_infowindow.close(map, yellow_marker);
+	}
+}
+		
+function functionSearch() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+function hidePlaces() {
+	var places = document.getElementById("myUL");
+	places.style.display = "block"
+}
+
+function functionHide() {
+	var places = document.getElementById("myUL");
+	places.style.display = "none"
+}
