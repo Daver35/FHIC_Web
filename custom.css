@@ -136,27 +136,62 @@ h3, h4 {
 
 .button_tema {
 	cursor: pointer;
+	display: inline-block;
+	font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	position: relative;
+	padding: 0.8em 1.4em;
+	border: none;
+	color: white;
+	transition: 0.2s;
 }
 
 .button_hide {
+	
     cursor: pointer;
     display: none;
+	opacity: 0.6;
+	font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	position: relative;
+	padding: 0.8em 1.4em;
+	border: none;
+	color: white;
+	transition: 0.2s;
 }
 
 
 #medi_ambient {
+	background-color: #4CAF50; /* Green */
+	background-size:cover;
+
+}
+
+#medi_ambient2 {
 	background-color: #4CAF50; /* Green */
 }
 	
 #serveis {
 	background-color: #008CBA; /* Blue */ 
 }
+
+#serveis2 {
+	background-color: #008CBA; /* Blue */ 
+}
 	
 #socials {
 	background-color: #7d3c98 ; /*Purple*/ 
 }
+
+#socials2 {
+	background-color: #7d3c98 ; /*Purple*/ 
+}
 	
 #infraestructures {
+	background-color: #FFA500; /* Orange */ 
+}
+
+#infraestructures2 {
 	background-color: #FFA500; /* Orange */ 
 }
 
@@ -168,7 +203,7 @@ h3, h4 {
 form {
     width: 75%;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .search {
@@ -214,3 +249,58 @@ form {
 }
 
 /* ---------------------------------------------- */
+
+/*search y tabla resultados*/
+
+* {
+  box-sizing: border-box;
+}
+/*
+.search-button {
+	color: #868686;
+	}
+	*/
+#myInputForm {
+font-size: 16px;
+padding: 12px 20px 12px 20px;
+font-family: Arial;
+border: 1px solid #ddd;
+margin-bottom: 12px;
+background-color: #f3f3f3;
+
+}
+
+#myInput {
+	background: none;
+	border: none !important;
+	box-shadow:none !important;
+	}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: none;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+.search-icon {
+	color: #606060;
+	font-size: 27px;
+}
