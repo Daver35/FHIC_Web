@@ -1,3 +1,26 @@
+/* Fitxer CSS per la pàgina petition */
+
+/* Navigation bar */
+.navbar-default .navbar-nav > li > a:hover {
+    color: #469030;
+}
+
+.navbar-brand{
+    padding-top: 11px;
+}
+
+/* ---------------------------------------------- */
+
+/* Titles and body */
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #469030;
+}
+
+.navbar-brand{
+    padding-top: 11px;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
