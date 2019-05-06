@@ -6,9 +6,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href='custom.css' rel='stylesheet' type='text/css'>
-	
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-	
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     </head>
@@ -17,7 +15,7 @@
       <nav class = "navbar navbar-default navbar-fixed-top" role = "navigation">
    
          <div class = "navbar-header" style="margin-left: 150px;">
-          <a class = "navbar-brand" href = "#">
+          <a class = "navbar-brand" href = "index.html">
             <img src="images/logo.png" alt="Local change" style="height: 30px;">
           </a>
          </div>
@@ -51,8 +49,9 @@
 
                     <h4 align="center" style="margin-bottom: 40px;">Inicia una petició o dóna suport a una existent per tal d'aconseguir un canvi positiu en el teu barri o poble.</h4>
 
-                    <div class="container" style="height: 50px">
+                    <div class="container popup" onclick="popup_function()" style="height: 50px">
                     	<button class="button_fancy square green" style="width: 160px; height: 45px;"><strong>Inicia una petició</strong></button>
+                    	<span class="popuptext" id="myPopup">Tasca no implementada</span>
                     </div>
                     
                 </div>
@@ -92,37 +91,26 @@
 			<h4>Temes</h4>
 
 			<div>
-			<button onclick="myFunction1()" class="button_tema" id="medi_ambient">Medi ambient <i class="fas fa-leaf"></i>
-</button>
-		
-			<button onclick="myFunction1()" class="button_hide" id="medi_ambient2">Medi ambient <i class="fas fa-leaf"></i>
-</button>
+				<button onclick="myFunction1()" class="button_tema" id="medi_ambient">Medi ambient <i class="fas fa-leaf"></i></button>
+				<button onclick="myFunction1()" class="button_hide" id="medi_ambient2">Medi ambient <i class="fas fa-leaf"></i></button>
 			</div>
 			
 			<div>
-			<button onclick="myFunction2()" class="button_tema" id="serveis">Serveis <i class="fas fa-subway"></i></i></button>
-			<button onclick="myFunction2()" class="button_hide" id="serveis2">Serveis <i class="fas fa-subway"></i></i></button>
+				<button onclick="myFunction2()" class="button_tema" id="serveis">Serveis <i class="fas fa-subway"></i></i></button>
+				<button onclick="myFunction2()" class="button_hide" id="serveis2">Serveis <i class="fas fa-subway"></i></i></button>
 			</div>
+
 			<div>
-			<button onclick="myFunction3()" class="button_tema" id="socials">Socials <i class="fas fa-user-friends"></i></button>
-			<button onclick="myFunction3()" class="button_hide" id="socials2">Socials <i class="fas fa-user-friends"></i></button>
+				<button onclick="myFunction3()" class="button_tema" id="socials">Socials <i class="fas fa-user-friends"></i></button>
+				<button onclick="myFunction3()" class="button_hide" id="socials2">Socials <i class="fas fa-user-friends"></i></button>
 			</div>
+
 			<div>
-			<button onclick="myFunction4()" class="button_tema" id="infraestructures">Infraestructures <i class="fas fa-building"></i></button>
-			<button onclick="myFunction4()" class="button_hide" id="infraestructures2">Infraestructures <i class="fas fa-building"></i></button>
+				<button onclick="myFunction4()" class="button_tema" id="infraestructures">Infraestructures <i class="fas fa-building"></i></button>
+				<button onclick="myFunction4()" class="button_hide" id="infraestructures2">Infraestructures <i class="fas fa-building"></i></button>
 			</div>
 		
 		</div> 
-	
-	
-	<!--/
-	<div id="temas_seleccionados">
-		<button id="medi_ambient2">Medi ambient</button>
-		<button id="serveis2">Serveis</button>
-		<button id="socials2">Socials</button>
-		<button id="infraestructures2">Infraestructures</button>
-	  </div> 
-	  -->
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

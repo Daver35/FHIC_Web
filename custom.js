@@ -23,7 +23,7 @@ $(function () {
         red_marker = new google.maps.Marker({
             position: new google.maps.LatLng(41.3863738,2.1757399),
             map: map,
-            icon: 'images/red_marker.png'
+            icon: 'images/purple_marker.png'
         });
 
         var red_contentString = '<div class="info-window">' +
@@ -40,7 +40,7 @@ $(function () {
 
 		// Blue marker -----------------
 
-	blue_marker = new google.maps.Marker({
+		blue_marker = new google.maps.Marker({
             position: new google.maps.LatLng(41.3863337,2.1630204),
             map: map,
             icon: 'images/blue_marker.png'
@@ -74,6 +74,7 @@ $(function () {
                 '<h3>Reforma parc infantil</h3>' +
                 '<div class="info-content">' +
                 '<p>Realitzo aquesta petició amb l\'esparança d\'obtenir el suport dels veïns de Barcelona que han experimentat de manera directa o indirecta aquest problema. Sóc una mare de dos fills que de tant en tant decideix portar-los al parc després de l\'escola...</p>' +
+                '<a href="petition.html">Visualitza la petició</a>' + 
                 '</div>' +
                 '</div>';
 
@@ -311,4 +312,10 @@ function hidePlaces() {
 function functionHide() {
 	var places = document.getElementById("myUL");
 	places.style.display = "none"
+}
+
+// When the user clicks on <div>, open the popup
+function popup_function() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
 }
