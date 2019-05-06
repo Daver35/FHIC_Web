@@ -33,7 +33,7 @@ input {
   margin-bottom: 10px; 
 }
 
-img {
+.img_peticio {
   border: 0;
   -ms-interpolation-mode: bicubic;
   max-width: 96%;
